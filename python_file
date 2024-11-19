@@ -47,6 +47,7 @@ def button_operator(operator):
 def button_equal():
     second_number = e.get()
     e.delete(0, END)
+# able to choose second number also delete
     if num_operator == '+':
         e.insert(0, f_num + int(second_number))
     elif num_operator == '*':
@@ -58,7 +59,7 @@ def button_equal():
     else:
         e.insert(0, "Invalid!!!")
 
-# Document what the following lines of code do here
+# here is the whole calculation happaning. It is giving ability to make examples with first and second number like subtract or addition etc.
 
 # NOTE: We did not cover Lambda functins in class. A Lambda Function 
 # in Python programming is an anonymous function
