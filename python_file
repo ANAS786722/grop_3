@@ -17,16 +17,21 @@ e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # Document what the following lines of code do here
+# This function handles the event when a number button is clicked. It retrieves the current text in the input field, appends the clicked number to it, and updates the input field with the new value.
 def button_click(number):
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))
 
 # Document what the following lines of code do here
+# This function clears the input field completely, resetting it to an empty state. It is typically triggered by a "Clear" button.
 def button_clear():
     e.delete(0, END)
 
 # Document what the following lines of code do here
+# This function processes operator buttons (e.g., +, -, *, /). 
+  It retrieves the current value from the input field, stores it as the first number in a global variable, stores the operator in another global variable, 
+  and clears the input field to allow the entry of the next number.
 def button_operator(operator):
     first_number = e.get()
     global f_num
