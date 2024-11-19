@@ -90,7 +90,7 @@ button_subtract =  Button(root, text="-", padx=40, pady=20, command=lambda: butt
 button_multiply =  Button(root, text="*", padx=40, pady=20, command=lambda: button_operator("*"))
 button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button_operator("/"))
 
-# Document what the following lines of code do here
+# same as previous adding buttons that do next subtraction, equals and devision 
 
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
