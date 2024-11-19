@@ -1,8 +1,11 @@
 # Program description goes here
+# This program is a simple calculator 
+# It provides a graphical user interface (GUI) where users can perform basic arithmetic operations 
+# such as addition, subtraction, multiplication, and division.
 # Updated on: 19.11.24
 # Updated by:
 # Eleonora Dosumbetova
-#
+# Anas Mohammed 
 # Document what the following lines of code do here
 from tkinter import *
 
