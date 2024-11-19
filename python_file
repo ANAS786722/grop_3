@@ -45,19 +45,22 @@ def button_operator(operator):
 # you might want to consider adding documentation on a line by line basis since
 # this is a critical function for the program
 def button_equal():
+    # Retrieve the second number from the input field (as a string).
     second_number = e.get()
+    # Clear the input field to prepare for displaying the result.
     e.delete(0, END)
-# able to choose second number also delete
-    if num_operator == '+':
+    # Perform the appropriate calculation based on the stored operator.
+    if num_operator == '+':  # If the operator is addition, add the two numbers.
         e.insert(0, f_num + int(second_number))
-    elif num_operator == '*':
+    elif num_operator == '*':  # If the operator is multiplication, multiply the two numbers.
         e.insert(0, f_num * int(second_number))
-    elif num_operator == '/':
+    elif num_operator == '/':  # If the operator is division, divide the two numbers.
         e.insert(0, f_num / int(second_number))
-    elif num_operator == '-':
+    elif num_operator == '-':  # If the operator is subtraction, subtract the two numbers.
         e.insert(0, f_num - int(second_number))
-    else:
+    else:  # If the operator is not recognized, display an error message.
         e.insert(0, "Invalid!!!")
+
 
 # here is the whole calculation happaning. It is giving ability to make examples with first and second number like subtract or addition etc.
 
