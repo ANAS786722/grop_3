@@ -41,6 +41,7 @@ def button_operator(operator):
     e.delete(0, END)
 
 # Document what the following lines of code do here
+# executes the final calculation when the "Equal" button is pressed.
 
 # you might want to consider adding documentation on a line by line basis since
 # this is a critical function for the program
