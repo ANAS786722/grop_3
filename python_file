@@ -78,7 +78,7 @@ button_equal =  Button(root, text="   =   ", padx=79, pady=20, command=button_eq
 button_clear =  Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
 
-# this section adds buttons from 0 to 9, operators, clear commands
+# this section adds buttons from 0 to 9, operators, clear commands and ability to press on it
 
 # See the description of a Lambda function above
 button_subtract =  Button(root, text="-", padx=40, pady=20, command=lambda: button_operator("-"))
